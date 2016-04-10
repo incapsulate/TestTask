@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-height: 1000000px;
+    color: #323232;
+    color: #323232;
+}
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0px;
+}
+html {
+    height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display: block;
+}
+body {
+    font: 12px/18px sans-serif, Arial;
+    height: 100%;
+    background: #f8f8f8 repeat scroll 0 0 transparent;
+}
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    background: #EEE none repeat scroll 0% 0%;
+}
+ul{
+    list-style: none;
+}
+img{
+    border: none;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear {
+    clear: both;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+input{
+    border: 0;
+    font-family: Arial;
+    font-size: 16px;
+}
+textarea{
+    resize: none;
+    border: none;
+    font-family: Arial;
+    font-size: 16px;
+}
+.bg_grey{
+    background-color: #DDDDDD;
+}
+.blue, a{
+    color: #2E69B5;
+}
+/*--header------------------------------------------------------------*/
+.header{
+    background: #4283D3;
+    height: 100px;
+    padding: 0 50px;
+}
+.header > .left{
+    color: #144EA0;
+    font-size: 27px;
+    padding-top: 30px;
+}
+
+.header > .right a {
+    color: white;
+    padding: 0 7px;
+    display: inline-block;
+    font-size: 14px;
+    margin-top: 7px;
+}
+.header > .right .login{
+    border-right: 2px solid #2E69B5;
+    font-weight: 700;
+}
+.header > .right .login, .header > .right .logout:hover{text-decoration: none;}
+.header > .right .logout, .header > .right .login:hover{text-decoration: underline;}
+ul.tab-links{
+    margin-top: 20px;
+}
+ul.tab-links li{display: inline-block;}
+ul.tab-links li a{
+    display: inline-block;
+    padding: 7px;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+}
+ul.tab-links li.active a{
+    background-color: #EEE;
+    font-weight: normal;
+}
+/*--header--------------------------------------------------------------*/
+
+/*--content-------------------------------------------------------------*/
+.content{
+    padding: 0 40px;
+}
+.tab-content .tab{
+    display:none;
+}
+.tab-content .tab.active{
+    display: block;
+}
+.content h2{
+    padding: 20px 0 20px 10px;
+    font-weight: 700;
+}
+#tab1 .table.left{
+    border: 3px solid rgb(242,242,242);
+    width: 75%;
+}
+.pagination {
+    padding: 8px;
+}
+.pagination ul li{
+    display: inline-block;
+    border: 1px solid #C1C1C1;
+}
+.pagination ul li a, .pagination ul li span{
+    padding: 5px 8px;
+}
+.pagination ul li.active, .pagination ul li:hover, .tab-content .sidebar .button a:hover, .tab-content .sidebar .search [type="submit"]:hover{
+    background-color: white;
+}
+.pagination ul li.active a{
+    color: black;
+}
+.pagination .left a{
+    display: inline-block;
+    border-right: 2px solid #B9B9B9;
+    padding-right: 10px;
+}
+.table table{
+    border-collapse:separate;
+    border-spacing:0;
+    width: 100%;
+}
+.table table thead{
+    background: #FFDE75 none repeat scroll 0% 0%;
+}
+.table table tbody{
+    background: #FFF none repeat scroll 0% 0%;
+}
+.table table td{
+    padding: 7px;
+}
+.table table td input{vertical-align: middle;}
+.table table td .icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.table table td .yes {background: transparent url("../images/yes.png") repeat scroll 0% 0% / 100% auto;}
+.table table td .no{background: transparent url("../images/no.png") repeat scroll 0% 0% / 100% auto}
+.table table td .no{background: transparent url("../images/no.png") repeat scroll 0% 0% / 100% auto}
+.table table td .edit{background: transparent url("../images/edit.png") repeat scroll 0% 0% / 100% auto}
+.table table td .delete{background: transparent url("../images/delete.png") repeat scroll 0% 0% / 100% auto}
+.table table td:nth-child(6), .table table td:nth-child(7){text-align: center;} /* ?SS3 ????????, ?? ???? ?? ????? ???????? ? ?????? ?????????*/
+.table table td:nth-child(5){width: 33%;}
+.tab-content .sidebar{
+    width: 22%;
+}
+.tab-content .sidebar .button a{
+    display: block;
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 0 0 4px grey;
+    padding: 5px 0;
+}
+.tab-content .sidebar .bg_grey{
+    margin-bottom: 15px;
+    padding: 7px;
+}
+.tab-content .sidebar .stats p, .tab-content .sidebar .stats div{
+    font-size: 16px;
+    padding: 4px 0;
+}
+.tab-content .sidebar p.blue, .tab-content .sidebar .search input{font-weight: 700;}
+.tab-content .sidebar .stats p.blue + p span:last-child{padding-right: 15px;}
+.tab-content .sidebar .search, .tab-content .sidebar .search input{
+    font-size: 16px;
+}
+.tab-content .sidebar .search input{
+    margin-top: 8px;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 0 0 4px grey;
+    height: 30px;
+}
+.tab-content .sidebar .search [type="submit"]{
+    width: 90px;
+    float: right;
+    cursor: pointer;
+}
+.auth {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    line-height: 100vh;
+}
+.auth form{
+    display: inline-block;
+    width: 400px;
+    border: 1px solid #CBCBCB;
+    vertical-align: middle;
+    line-height: 1;
+}
+.auth form h4{
+    display: inline-block;
+    background-color: #4283D3;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: left;
+}
+.auth form h4 span{
+    color: #fff;
+    padding-left: 20px;
+    display: inline-block;
+}
+.auth form .form_wrapper{
+    padding: 20px;
+    text-align: left;
+}
+.auth form .form_wrapper label span{
+    color: #989898;
+    font-weight: 700;
+    font-size: 14px;
+}
+.auth form .form_wrapper label input{
+    width: 100%;
+    border: 1px solid #000;
+    margin: 5px 0;
+    height: 25px;
+}
+.auth form .form_wrapper label {
+    display: inline-block;
+    margin: 7px 0;
+    width: 100%;
+}
+.auth form .form_wrapper label:first-child{
+    margin-top: 0;
+}
+.button{
+    border: 1px solid #000;
+    padding: 3px 35px;
+    font-weight: 700;
+    background: #d7d7d7; /* Old browsers */
+    background: -moz-linear-gradient(top, #d7d7d7 0%, #e8e8e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #d7d7d7 0%,#e8e8e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #d7d7d7 0%,#e8e8e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+}
+.button:hover{
+    background: #e8e8e8; /* Old browsers */
+    background: -moz-linear-gradient(left, #e8e8e8 0%, #d7d7d7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #e8e8e8 0%,#d7d7d7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #e8e8e8 0%,#d7d7d7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e8e8', endColorstr='#d7d7d7',GradientType=1 ); /* IE6-9 */
+}
+/*--content-------------------------------------------------------------*/
